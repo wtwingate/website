@@ -1,9 +1,15 @@
 @import url("../../public/fonts/monolisa.css");
 
+$font-stack: "MonoLisa Variable", monospace;
+$fg-color: #3c3836;
+$bg-color: #fbf1c7;
+
 html {
-  font-family: "MonoLisa Variable", Courier, monospace;
+  font-family: $font-stack;
   font-feature-settings: "ss02", "zero";
   font-size: 16px;
+  color: $fg-color;
+  background-color: $bg-color;
 }
 
 body {
@@ -12,9 +18,12 @@ body {
 }
 
 h1.hero {
-  font-size: 2rem;
+  font-size: 3rem;
+  text-align: center;
 }
 
 h2.hero-sub {
+  font-size: 2rem;
   font-style: italic;
+  text-align: center;
 }
