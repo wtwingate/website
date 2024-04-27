@@ -1,0 +1,20 @@
+@import url("../../public/fonts/monolisa.css");
+
+html {
+  font-family: "MonoLisa Variable", Courier, monospace;
+  font-feature-settings: "ss02", "zero";
+  font-size: 16px;
+}
+
+body {
+  max-width: 80ch;
+  margin: auto;
+}
+
+h1.hero {
+  font-size: 2rem;
+}
+
+h2.hero-sub {
+  font-style: italic;
+}
