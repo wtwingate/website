@@ -1,29 +1,76 @@
 @import url("../../public/fonts/monolisa.css");
 
 $font-stack: "MonoLisa Variable", monospace;
-$fg-color: #3c3836;
-$bg-color: #fbf1c7;
+$black: #3c3836;
+$white: #fbf1c7;
+$red: #9d0006;
+$green: #79740e;
+$yellow: #b57614;
+$blue: #076678;
 
 html {
   font-family: $font-stack;
   font-feature-settings: "ss02", "zero";
   font-size: 16px;
-  color: $fg-color;
-  background-color: $bg-color;
+  color: $black;
+  background-color: $white;
 }
 
 body {
-  max-width: 80ch;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   margin: auto;
+  max-width: 80ch;
 }
 
-h1.hero {
-  font-size: 3rem;
-  text-align: center;
+header {
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 1rem;
+
+    .btn {
+      color: white;
+      padding: 10px 30px;
+      text-decoration: none;
+    }
+
+    #home {
+      background-color: $red;
+      border-color: $red;
+    }
+
+    #about {
+      background-color: $green;
+      border-color: $green;
+    }
+
+    #blog {
+      background-color: $yellow;
+      border-color: $yellow;
+    }
+
+    #projects {
+      background-color: $blue;
+      border-color: $blue;
+    }
+  }
 }
 
-h2.hero-sub {
-  font-size: 2rem;
-  font-style: italic;
+main {
+  margin: auto 0;
+}
+
+footer {
   text-align: center;
+  margin-top: auto;
+  padding: 1rem;
+
+  div.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
 }
