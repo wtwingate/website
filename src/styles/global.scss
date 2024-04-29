@@ -4,14 +4,15 @@
 $font-stack: "MonoLisa Variable", monospace;
 
 html {
+  background-color: $gb-lm-bg1;
   font-family: $font-stack;
   font-feature-settings: "zero";
   font-size: 16px;
-  color: $gb-lm-fg0;
-  background-color: $gb-lm-bg0;
 }
 
 body {
+  color: $gb-lm-fg0;
+  background-color: $gb-lm-bg0;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -27,7 +28,7 @@ header {
     padding: 1rem;
 
     .btn {
-      color: $gb-lm-bg0;
+      color: $gb-lm-bg0-hard;
       padding: 10px 30px;
       text-decoration: none;
     }
@@ -56,6 +57,10 @@ header {
 
 main {
   margin: auto 0;
+
+  h1 {
+    text-align: center;
+  }
 }
 
 footer {
