@@ -56,7 +56,8 @@ header {
 }
 
 main {
-  margin: auto 0;
+  margin: auto;
+  max-width: 60ch;
 
   h1 {
     text-align: center;
