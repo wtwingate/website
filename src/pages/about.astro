@@ -1,5 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import profilePic from "../images/profile.jpeg";
 ---
 
 <style>
@@ -13,11 +15,11 @@ import Layout from "../layouts/Layout.astro";
 <Layout title="About">
   <main>
     <h1>About Me</h1>
-    <img
-      src="images/profile.jpeg"
-      alt="Some guy with an awesome beard"
+    <Image
+      src={profilePic}
+      alt="Some dude with an awesome beard"
       width="600"
-      height="auto"
+      loading="eager"
     />
     <h2>Who am I?</h2>
     <p>
