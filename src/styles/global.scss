@@ -1,19 +1,14 @@
+@use "./gruvbox" as *;
 @import url("../../public/fonts/monolisa.css");
 
 $font-stack: "MonoLisa Variable", monospace;
-$black: #3c3836;
-$white: #fbf1c7;
-$red: #9d0006;
-$green: #79740e;
-$yellow: #b57614;
-$blue: #076678;
 
 html {
   font-family: $font-stack;
   font-feature-settings: "zero";
   font-size: 16px;
-  color: $black;
-  background-color: $white;
+  color: $gb-lm-fg0;
+  background-color: $gb-lm-bg0;
 }
 
 body {
@@ -32,29 +27,29 @@ header {
     padding: 1rem;
 
     .btn {
-      color: white;
+      color: $gb-lm-bg0;
       padding: 10px 30px;
       text-decoration: none;
     }
 
     #home {
-      background-color: $red;
-      border-color: $red;
+      background-color: $gb-lm-dark-red;
+      border-color: $gb-lm-dark-red;
     }
 
     #about {
-      background-color: $green;
-      border-color: $green;
+      background-color: $gb-lm-dark-green;
+      border-color: $gb-lm-dark-green;
     }
 
     #blog {
-      background-color: $yellow;
-      border-color: $yellow;
+      background-color: $gb-lm-dark-yellow;
+      border-color: $gb-lm-dark-yellow;
     }
 
     #projects {
-      background-color: $blue;
-      border-color: $blue;
+      background-color: $gb-lm-dark-blue;
+      border-color: $gb-lm-dark-blue;
     }
   }
 }
