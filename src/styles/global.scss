@@ -8,3 +8,13 @@ html {
   font-feature-settings: "zero";
   font-size: 16px;
 }
+
+body {
+  color: $gb-lm-fg0;
+  background-color: $gb-lm-bg0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
