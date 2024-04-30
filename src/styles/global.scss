@@ -4,79 +4,7 @@
 $font-stack: "MonoLisa Variable", monospace;
 
 html {
-  background-color: $gb-lm-bg1;
   font-family: $font-stack;
   font-feature-settings: "zero";
   font-size: 16px;
-}
-
-body {
-  color: $gb-lm-fg0;
-  background-color: $gb-lm-bg0;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-  width: 800px;
-}
-
-header {
-  nav {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 1rem;
-
-    .btn {
-      color: $gb-lm-bg0-hard;
-      padding: 10px 30px;
-      text-decoration: none;
-    }
-
-    #home {
-      background-color: $gb-lm-dark-red;
-      border-color: $gb-lm-dark-red;
-    }
-
-    #about {
-      background-color: $gb-lm-dark-green;
-      border-color: $gb-lm-dark-green;
-    }
-
-    #blog {
-      background-color: $gb-lm-dark-yellow;
-      border-color: $gb-lm-dark-yellow;
-    }
-
-    #projects {
-      background-color: $gb-lm-dark-blue;
-      border-color: $gb-lm-dark-blue;
-    }
-  }
-}
-
-main {
-  margin: auto;
-  width: 600px;
-}
-
-h1 {
-  text-align: center;
-}
-
-p,
-li {
-  line-height: 1.5rem;
-}
-
-footer {
-  text-align: center;
-  margin-top: auto;
-  padding: 1rem;
-
-  div.social-links {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-  }
 }
