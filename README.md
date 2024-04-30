@@ -2,7 +2,7 @@
 
 This is the source code for my website: [mallard.dev](https://mallard.dev).
 
-## Stack
+## Tech Stack
 
 - Built with [Astro](https://astro.build/)
 - Deployed on [Netlify](https://www.netlify.com/)
