@@ -14,10 +14,8 @@ Welcome to my _shiny new_ blog!
 ## About Me
 
 First, a little bit about me: My name is Will, and I'm an aspiring full-stack
-web developer. I'm about 9 months into this journey of learning how to program,
-and I'm loving (_almost_) every minute of it. Beyond the standard web dev stuff,
-I'm also interested in learning about systems programming and low-level
-languages like C and Rust.
+web developer. I'm about 9 months into my journey of learning how to program,
+and I'm loving (_almost_) every minute of it!
 
 ## About this Blog
 
@@ -28,4 +26,4 @@ Primarily, this blog is just meant to be a dumping ground for the things I'm
 learning about. I can't promise that what I write here will be worth reading,
 but I can promise that I'll learn a lot just by writing it.
 
-Thanks for stopping by!
+Thanks for reading!

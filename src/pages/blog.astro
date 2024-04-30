@@ -2,9 +2,15 @@
 import Layout from "../layouts/Layout.astro";
 ---
 
+<style>
+  #blog-subtitle {
+    text-align: center;
+  }
+</style>
+
 <Layout title="Blog">
   <h1>My Blog</h1>
-  <p>Just the random musings of a guy learning how to program</p>
+  <p id="blog-subtitle">Check here to see my latests blog posts!</p>
   <ul>
     <li><a href="/posts/hello-world">Hello, World!</a></li>
   </ul>
