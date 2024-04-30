@@ -10,8 +10,31 @@ html {
 }
 
 body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   color: $gb-lm-fg0;
   background-color: $gb-lm-bg0;
+}
+
+header {
+  text-align: center;
+}
+
+main {
+}
+
+footer {
+  margin-top: auto;
+  text-align: center;
+}
+
+nav {
+  text-transform: uppercase;
+}
+
+h1 {
+  text-align: center;
 }
 
 img {
