@@ -9,4 +9,4 @@ This is the source code for my website: [mallard.dev](https://mallard.dev).
 
 ## Sources
 
-- SCSS color scheme: [Gruvbox](https://github.com/morhetz/gruvbox-contrib)
+- SCSS color scheme: [Catppuccin](https://github.com/catppuccin)
