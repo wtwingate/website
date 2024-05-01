@@ -1,20 +1,25 @@
-@use "./gruvbox" as *;
+@use "/node_modules/@catppuccin/palette/scss/latte" as *;
 @import url("../../public/fonts/monolisa.css");
 
 $font-stack: "MonoLisa Variable", monospace;
+$accent-color: $teal;
 
 html {
   font-family: $font-stack;
   font-feature-settings: "zero";
   font-size: 16px;
+  background-color: $surface0;
 }
 
 body {
   min-height: 100vh;
+  max-width: 600px;
   display: flex;
   flex-direction: column;
-  color: $gb-lm-fg0;
-  background-color: $gb-lm-bg0;
+  margin: 0 auto;
+  padding: 1rem;
+  color: $text;
+  background-color: $base;
 }
 
 header {
@@ -30,14 +35,54 @@ footer {
 }
 
 nav {
-  text-transform: uppercase;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px 20px;
+
+  div {
+    padding: 0.5rem 2rem;
+    color: $base;
+    background-color: $accent-color;
+  }
+
+  a {
+    text-decoration: none;
+    text-transform: uppercase;
+  }
 }
 
 h1 {
   text-align: center;
 }
 
+p {
+  line-height: 1.5rem;
+}
+
 img {
   width: 100%;
   height: auto;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  column-gap: 50px;
+
+  svg {
+    color: $text;
+  }
+}
+
+#welcome {
+}
+
+#welcome-sub {
+  text-align: center;
+  font-style: italic;
+}
+
+#signature {
+  color: $accent-color;
 }
