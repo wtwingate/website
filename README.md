@@ -7,6 +7,7 @@ This is the source code for my website: [mallard.dev](https://mallard.dev).
 - Built with [Astro](https://astro.build/)
 - Deployed on [Netlify](https://www.netlify.com/)
 
-## Sources
+## Attributions
 
+- Duck by Nicky Spencer from [The Noun Project](https://thenounproject.com/browse/icons/term/duck/) (CC BY 3.0)
 - SCSS color scheme: [Catppuccin](https://github.com/catppuccin)
