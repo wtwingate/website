@@ -10,4 +10,4 @@ This is the source code for my website: [mallard.dev](https://mallard.dev).
 ## Attributions
 
 - Duck by Nicky Spencer from [The Noun Project](https://thenounproject.com/browse/icons/term/duck/) (CC BY 3.0)
-- SCSS color scheme: [Catppuccin](https://github.com/catppuccin)
+- CSS color scheme: [Catppuccin](https://github.com/catppuccin)

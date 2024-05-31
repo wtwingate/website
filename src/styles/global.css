@@ -1,14 +1,11 @@
-@use "/node_modules/@catppuccin/palette/scss/latte" as *;
 @import url("../../public/fonts/monolisa.css");
-
-$font-stack: "MonoLisa Variable", monospace;
-$accent-color: $teal;
+@import "@catppuccin/palette/css/catppuccin.css";
 
 html {
-  font-family: $font-stack;
+  font-family: "MonoLisa Variable", monospace;
   font-feature-settings: "zero";
   font-size: 16px;
-  background-color: $surface0;
+  background-color: var(--ctp-latte-surface0);
 }
 
 body {
@@ -19,13 +16,15 @@ body {
   align-items: center;
   margin: 0 auto;
   padding: 1rem;
-  color: $text;
-  background-color: $base;
-  box-shadow: 0px 0px 8px 0px $text;
+  color: var(--ctp-latte-text);
+  background-color: var(--ctp-latte-base);
+  box-shadow: 0px 0px 8px 0px var(--ctp-latte-text);
 }
 
 header {
-  text-align: center;
+  width: 100%;
+  height: 4rem;
+  background-color: var(--ctp-latte-teal);
 }
 
 main {
@@ -39,25 +38,19 @@ footer {
 }
 
 nav {
+  height: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 10px 20px;
+  align-items: center;
+  gap: 10px 30px;
+}
 
-  div {
-    padding: 0.5rem 2rem;
-    color: $base;
-    background-color: $accent-color;
-  }
-
-  div:hover {
-    filter: brightness(90%);
-  }
-
-  a {
-    text-decoration: none;
-    text-transform: uppercase;
-  }
+nav a {
+  color: var(--ctp-latte-base);
+  font-size: 1.3rem;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 h1 {
@@ -77,10 +70,10 @@ img {
   display: flex;
   justify-content: center;
   column-gap: 50px;
+}
 
-  svg {
-    color: $text;
-  }
+.social-links svg {
+  color: var(--ctp-latte-text);
 }
 
 #welcome-sub {
@@ -89,5 +82,5 @@ img {
 }
 
 #signature {
-  color: $accent-color;
+  color: var(--ctp-latte-teal);
 }
