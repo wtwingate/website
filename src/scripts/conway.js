@@ -9,14 +9,18 @@ const DELTAS = [
   [-1, 1],
 ];
 
+const board = document.getElementById("board");
+const width = board.clientWidth;
+
 const canvas = document.getElementById("canvas");
 const context = canvas.getContext("2d");
-const rect = canvas.getBoundingClientRect();
+canvas.setAttribute("width", width);
+canvas.setAttribute("height", width);
 
 class Grid {
   constructor() {
-    this.width = Math.floor(rect.width / 10);
-    this.height = Math.floor(rect.height / 10);
+    this.width = Math.floor(width / 10);
+    this.height = Math.floor(width / 10);
     this.size = 10;
     this.speed = 250;
     this.cells = this.init();
@@ -132,5 +136,9 @@ class Cell {
   }
 }
 
-const grid = new Grid();
-grid.loop();
+function conway() {
+  const grid = new Grid();
+  grid.loop();
+}
+
+conway();
