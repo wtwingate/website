@@ -3,25 +3,10 @@ import Layout from "../../layouts/Layout.astro";
 const pageTitle = "Conway's Game of Life";
 ---
 
-<style>
-  @import "@catppuccin/palette/css/catppuccin.css";
-
-  div#board {
-    margin-top: 40px;
-  }
-
-  canvas {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-</style>
-
 <Layout title={pageTitle}>
   <h1>{pageTitle}</h1>
   <div id="board">
-    <canvas id="canvas">Conways' Game of Life</canvas
-    >
+    <canvas id="canvas">Conways' Game of Life</canvas>
   </div>
 </Layout>
 
