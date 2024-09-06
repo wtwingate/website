@@ -2,8 +2,41 @@
 
 ---
 
-<nav class="flex items-center justify-center gap-16 text-2xl font-bold">
-  <a class="transition hover:text-teal-700" href="/">Home</a>
-  <a class="transition hover:text-teal-700" href="/blog">Blog</a>
-  <a class="transition hover:text-teal-700" href="/projects">Projects</a>
+<nav class="nav-bar">
+  <a class="nav-logo" href="/">mallard.dev</a>
+  <ul class="nav-menu">
+    <li class="nav-item">
+      <a class="nav-link" href="/about">About</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/blog">Blog</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/projects">Projects</a>
+    </li>
+  </ul>
+  <div class="hamburger">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </div>
 </nav>
+
+<script>
+  const hamburger = document.querySelector(".hamburger");
+  const navMenu = document.querySelector(".nav-menu");
+
+  hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+  });
+
+  const navLink = document.querySelectorAll(".nav-link");
+
+  navLink.forEach((a) => {
+    a.addEventListener("click", () => {
+      hamburger.classList.remove("active");
+      navMenu.classList.remove("active");
+    });
+  });
+</script>
