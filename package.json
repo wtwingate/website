@@ -10,8 +10,9 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@catppuccin/palette": "^1.2.0",
-    "astro": "^4.14.4"
+    "@astrojs/tailwind": "^5.1.0",
+    "astro": "^4.15.3",
+    "tailwindcss": "^3.4.10"
   },
   "devDependencies": {
     "@eslint/js": "^9.4.0",
