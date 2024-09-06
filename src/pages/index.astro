@@ -6,32 +6,39 @@ const pageTitle = "Welcome";
 ---
 
 <Layout title={pageTitle}>
-  <h1>Hi, I'm Will 🦆</h1>
-  <h2>and this is my website</h2>
+  <h1 class="mb-8 mt-16 text-center text-5xl font-bold">Hi, I'm Will 🦆</h1>
+  <h2 class="my-8 text-center text-3xl font-semibold italic">
+    and this is my website
+  </h2>
   <Image
     src={profilePic}
     alt="Will and his wife Nancy sitting at a coffee shop."
     width="600"
     loading="eager"
+    class="mx-auto my-16 rounded-xl shadow"
   />
-  <h2>About Me</h2>
-  <p>
-    I've been a professional church musician for the past ten years. Now, I'm
-    learning how to program as I seek a career in full-stack web development!
-    I'm married to the beautiful and talented Nancy, and the Lord has blessed us
-    with two wonderful boys named Oliver and Sullivan.
+  <h2 class="mt-16 text-2xl font-semibold">Who am I?</h2>
+  <p class="my-4">
+    My name is Will Wingate, and I've been a professional church musician for
+    the past ten years. Now, I'm developing my programming skills as I seek a
+    career in full-stack web development! I'm married to the beautiful and
+    talented Nancy, and the Lord has blessed us with two wonderful boys named
+    Oliver and Sullivan.
   </p>
 
-  <h2>What I'm Learning</h2>
-  <p>
-    Ever since being introduced to the world of computer science and
-    programming, I've been spending most of my free time learning and building
-    cool things. Beyond the standard web development stuff, I'm also interested
-    in learning more about systems programming and low-level languages like C.
+  <h2 class="mt-16 text-2xl font-semibold">What am I learning?</h2>
+  <p class="my-4">
+    Over the past year, I've spent every spare moment learning everything I can
+    about computer science and building personal projects. Beyond the standard
+    web development stuff, I'm also interested in developer tooling,
+    command-line utilities, and systems programming. My favorite languages to
+    work in are C, Ruby, and JavaScript, but I've been known to dabble in
+    Python, Go, and Lisp when the mood strikes me. I use Vim <em>and</em> Emacs,
+    btw.
   </p>
 
-  <h2>What's up with the 🦆?</h2>
-  <p>
+  <h2 class="mt-16 text-2xl font-semibold">Why the 🦆?</h2>
+  <p class="my-4">
     Ducks are cool little guys. Some might even call them <em>majestic.</em> I enjoy
     watching ducks, feeding ducks, and collecting duck memorabilia. There are worse
     hobbies.
