@@ -1,17 +1,15 @@
 ---
-layout: "../../layouts/Layout.astro"
+layout: "../../layouts/BlogPostLayout.astro"
 title: Hello, World!
-pubDate: 2024-04-29
+date: 2024-04-29
 description: "This is the first post on my new blog."
 author: "William Wingate"
-tags: ["web-dev", "blogging", "programming"]
+tags: ["web development", "programming"]
 ---
 
-# Hello, World!
+## About Me
 
 Welcome to my _shiny new_ blog!
-
-## About Me
 
 First, a little bit about me: My name is Will, and I'm an aspiring full-stack web developer. I'm about 9 months into my journey of learning how to program, and I'm loving (_almost_) every minute of it!
 
