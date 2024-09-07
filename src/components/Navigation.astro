@@ -2,8 +2,41 @@
 
 ---
 
-<nav>
-  <a href="/" class="btn"><div>Home</div></a>
-  <a href="/blog" class="btn"><div>Blog</div></a>
-  <a href="/projects" class="btn"><div>Projects</div></a>
+<nav class="nav-bar">
+  <a class="nav-logo" href="/">mallard.dev</a>
+  <ul class="nav-menu">
+    <li class="nav-item">
+      <a class="nav-link" href="/about">About</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/blog">Blog</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/projects">Projects</a>
+    </li>
+  </ul>
+  <div class="hamburger">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </div>
 </nav>
+
+<script>
+  const hamburger = document.querySelector(".hamburger");
+  const navMenu = document.querySelector(".nav-menu");
+
+  hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+  });
+
+  const navLink = document.querySelectorAll(".nav-link");
+
+  navLink.forEach((a) => {
+    a.addEventListener("click", () => {
+      hamburger.classList.remove("active");
+      navMenu.classList.remove("active");
+    });
+  });
+</script>

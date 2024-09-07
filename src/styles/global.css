@@ -1,86 +1,71 @@
-@import url("../../public/fonts/monolisa.css");
-@import "@catppuccin/palette/css/catppuccin.css";
+@import url("/fonts/monolisa.css");
 
-html {
-  font-family: "MonoLisa Variable", monospace;
-  font-feature-settings: "zero";
-  font-size: 16px;
-  background-color: var(--ctp-latte-surface0);
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "ml", monospace;
+  }
 }
 
-body {
-  min-height: 100vh;
-  max-width: 800px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 auto;
-  padding: 1rem;
-  color: var(--ctp-latte-text);
-  background-color: var(--ctp-latte-base);
-  box-shadow: 0px 0px 8px 0px var(--ctp-latte-text);
-}
+@layer utilities {
+  .nav-bar {
+    @apply flex items-center justify-between px-8 py-4;
+  }
 
-header {
-  width: 100%;
-  height: 4rem;
-  background-color: var(--ctp-latte-teal);
-}
+  .nav-menu {
+    @apply flex items-center justify-between;
+  }
 
-main {
-  width: 100%;
-  max-width: 60ch;
-}
+  .nav-item {
+    @apply ml-16;
+  }
 
-footer {
-  margin-top: auto;
-  text-align: center;
-}
+  .nav-link {
+    @apply text-2xl font-medium text-slate-950 hover:text-teal-700;
+  }
 
-nav {
-  height: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 10px 30px;
-}
+  .nav-logo {
+    @apply text-3xl font-semibold text-slate-950 hover:text-teal-700;
+  }
 
-nav a {
-  color: var(--ctp-latte-base);
-  font-size: 1.3rem;
-  text-decoration: none;
-  text-transform: uppercase;
-}
+  .hamburger {
+    @apply hidden;
+  }
 
-h1 {
-  text-align: center;
-}
+  .bar {
+    @apply mx-auto my-2 block h-1 w-8 bg-slate-950 transition ease-in-out;
+  }
 
-p {
-  line-height: 1.5rem;
-}
+  @media only screen and (max-width: 768px) {
+    .nav-menu {
+      @apply fixed -left-full top-16 w-full flex-col rounded-xl bg-slate-50 text-center shadow transition;
+    }
 
-img {
-  width: 100%;
-  height: auto;
-}
+    .nav-menu.active {
+      @apply left-0;
+    }
 
-.social-links {
-  display: flex;
-  justify-content: center;
-  column-gap: 50px;
-}
+    .nav-item {
+      @apply mx-0 my-8;
+    }
 
-.social-links svg {
-  color: var(--ctp-latte-text);
-}
+    .hamburger {
+      @apply block cursor-pointer;
+    }
 
-#welcome-sub {
-  text-align: center;
-  font-style: italic;
-}
+    .hamburger.active .bar:nth-child(2) {
+      @apply opacity-0;
+    }
 
-#signature {
-  color: var(--ctp-latte-teal);
+    .hamburger.active .bar:nth-child(1) {
+      @apply translate-y-2 rotate-45;
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+      @apply -translate-y-4 -rotate-45;
+    }
+  }
 }

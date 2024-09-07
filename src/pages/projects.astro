@@ -1,0 +1,31 @@
+---
+import Layout from "../layouts/Layout.astro";
+const pageTitle = "Projects";
+---
+
+<Layout title={pageTitle}>
+  <article class="mx-auto max-w-prose">
+    <h1 class="my-16 text-center text-5xl font-bold">{pageTitle}</h1>
+
+    <h2 class="mt-8 text-2xl font-semibold">
+      <a class="hover:text-teal-700" href="https://lectionary2019.com"
+        >lectionary2019.com</a
+      >
+    </h2>
+    <p class="my-4">
+      This is a website for the Anglican lectionary, as found in the <a
+        href="https://bcp2019.anglicanchurch.net/"
+        class="underline"
+      >
+        Book of Common Prayer 2019
+      </a>. This is a bit of a passion project for me, based on my own
+      experience working at an Anglican church. The site provides a number of
+      useful tools for pastors, music directors, and church admins who are
+      responsible for planning the church's worship services. You can check out
+      the source code on my <a
+        href="https://github.com/wtwingate/lectionary"
+        class="underline">GitHub</a
+      >.
+    </p>
+  </article>
+</Layout>

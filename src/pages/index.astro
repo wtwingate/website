@@ -1,39 +1,13 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import { Image } from "astro:assets";
-import profilePic from "../images/profile.jpeg";
 const pageTitle = "Welcome";
 ---
 
 <Layout title={pageTitle}>
-  <h1 id="welcome">Hi, I'm Will 🦆</h1>
-  <h2 id="welcome-sub">and this is my website</h2>
-  <Image
-    src={profilePic}
-    alt="Will and his wife Nancy sitting at a coffee shop."
-    width="600"
-    loading="eager"
-  />
-  <h2>About Me</h2>
-  <p>
-    I've been a professional church musician for the past ten years. Now, I'm
-    learning how to program as I seek a career in full-stack web development!
-    I'm married to the beautiful and talented Nancy, and the Lord has blessed us
-    with two wonderful boys named Oliver and Sullivan.
-  </p>
-
-  <h2>What I'm Learning</h2>
-  <p>
-    Ever since being introduced to the world of computer science and
-    programming, I've been spending most of my free time learning and building
-    cool things. Beyond the standard web development stuff, I'm also interested
-    in learning more about systems programming and low-level languages like C.
-  </p>
-
-  <h2>What's up with the 🦆?</h2>
-  <p>
-    Ducks are cool little guys. Some might even call them <em>majestic.</em> I enjoy
-    watching ducks, feeding ducks, and collecting duck memorabilia. There are worse
-    hobbies.
-  </p>
+  <h1 class="mb-12 mt-24 text-pretty text-center text-5xl font-bold">
+    Howdy, I'm Will 👋
+  </h1>
+  <h2 class="my-8 text-pretty text-center text-3xl font-semibold italic">
+    and this is my website
+  </h2>
 </Layout>
