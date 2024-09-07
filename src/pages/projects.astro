@@ -4,39 +4,25 @@ const pageTitle = "Projects";
 ---
 
 <Layout title={pageTitle}>
-  <h1>{pageTitle}</h1>
+  <h1 class="my-16 text-center text-5xl font-bold">{pageTitle}</h1>
 
-  <h2><a href="https://github.com/wtwingate/pylect">Pylect</a></h2>
-  <p>
-    Pylect is a CLI tool written in Python for working with lectionary texts and
-    the Church's liturgical calendar. This was my first "personal project," and
-    I naively thought that it would be relatively straightforward. As it turns
-    out, translating dates in the Gregorian calendar to their corresponding
-    seasons and days in the liturgical calendar is far from trivial!
-  </p>
-
-  <h2><a href="/projects/conway">Conway's Game of Life</a></h2>
-  <p>
-    Conway's Game of Life is not really a game. It's more of a simulation. A
-    random group of cells are created, and on each turn those cells will either
-    survive, die, or reproduce based on four simple rules:
-    <ul>
-      <li>
-        Any living cell with fewer than two living neighbors dies, as if by
-        underpopulation.
-      </li>
-      <li>
-        Any living cell with more than three living neighbors dies, as if by
-        overpopulation.
-      </li>
-      <li>
-        Any living cell with two or three living neighbors lives on to the next
-        generation.
-      </li>
-      <li>
-        Any dead cell with exactly three living neighbors comes to life, as if
-        by reproduction.
-      </li>
-    </ul>
+  <h2 class="mt-8 text-3xl font-semibold">
+    <a class="hover:text-teal-700" href="https://lectionary2019.com"
+      >lectionary2019.com</a
+    >
+  </h2>
+  <p class="mt-4">
+    This is a website for the Anglican lectionary, as found in the <a
+      href="https://bcp2019.anglicanchurch.net/"
+      class="underline"
+    >
+      Book of Common Prayer 2019
+    </a>. This is a bit of a passion project for me, based on my own experience
+    working at an Anglican church. The site provides a number of useful tools
+    for pastors, music directors, and church admins who are responsible for
+    planning the church's worship services. You can check out the source code on
+    my <a href="https://github.com/wtwingate/lectionary" class="underline"
+      >GitHub</a
+    >.
   </p>
 </Layout>
