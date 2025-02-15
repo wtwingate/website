@@ -1,71 +1,67 @@
 @import url("/fonts/monolisa.css");
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
-@layer base {
-  html {
-    font-family: "ml", monospace;
-  }
+html {
+  font-family: "ml", monospace;
 }
 
-@layer utilities {
-  .nav-bar {
-    @apply flex items-center justify-between px-8 py-4;
+/* Hamburger Menu */
+.nav-bar {
+  @apply flex items-center justify-between px-8 py-4;
+}
+
+.nav-menu {
+  @apply flex items-center justify-between;
+}
+
+.nav-item {
+  @apply ml-16;
+}
+
+.nav-link {
+  @apply text-2xl font-medium text-slate-950 hover:text-teal-700;
+}
+
+.nav-logo {
+  @apply text-3xl font-semibold text-slate-950 hover:text-teal-700;
+}
+
+.hamburger {
+  @apply hidden;
+}
+
+.bar {
+  @apply mx-auto my-2 block h-1 w-8 bg-slate-950 transition ease-in-out;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav-menu {
+    @apply fixed -left-full top-16 w-full flex-col rounded-xl bg-slate-50 text-center shadow transition;
   }
 
-  .nav-menu {
-    @apply flex items-center justify-between;
+  .nav-menu.active {
+    @apply left-0;
   }
 
   .nav-item {
-    @apply ml-16;
-  }
-
-  .nav-link {
-    @apply text-2xl font-medium text-slate-950 hover:text-teal-700;
-  }
-
-  .nav-logo {
-    @apply text-3xl font-semibold text-slate-950 hover:text-teal-700;
+    @apply mx-0 my-8;
   }
 
   .hamburger {
-    @apply hidden;
+    @apply block cursor-pointer;
   }
 
-  .bar {
-    @apply mx-auto my-2 block h-1 w-8 bg-slate-950 transition ease-in-out;
+  .hamburger.active .bar:nth-child(2) {
+    @apply opacity-0;
   }
 
-  @media only screen and (max-width: 768px) {
-    .nav-menu {
-      @apply fixed -left-full top-16 w-full flex-col rounded-xl bg-slate-50 text-center shadow transition;
-    }
+  .hamburger.active .bar:nth-child(1) {
+    @apply translate-y-2 rotate-45;
+  }
 
-    .nav-menu.active {
-      @apply left-0;
-    }
-
-    .nav-item {
-      @apply mx-0 my-8;
-    }
-
-    .hamburger {
-      @apply block cursor-pointer;
-    }
-
-    .hamburger.active .bar:nth-child(2) {
-      @apply opacity-0;
-    }
-
-    .hamburger.active .bar:nth-child(1) {
-      @apply translate-y-2 rotate-45;
-    }
-
-    .hamburger.active .bar:nth-child(3) {
-      @apply -translate-y-4 -rotate-45;
-    }
+  .hamburger.active .bar:nth-child(3) {
+    @apply -translate-y-4 -rotate-45;
   }
 }
